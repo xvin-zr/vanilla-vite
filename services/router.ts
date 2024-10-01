@@ -28,19 +28,16 @@ const Router = {
         let pageElem: HTMLElement | undefined = undefined;
         switch (route) {
             case '/': {
-                pageElem = document.createElement('h1');
-                pageElem.textContent = 'Menu';
+                pageElem = document.createElement('menu-page');
                 break;
             }
             case '/order': {
-                pageElem = document.createElement('h1');
-                pageElem.textContent = 'Your Order';
+                pageElem = document.createElement('order-page');
                 break;
             }
             default: {
                 if (route.startsWith('/product-')) {
-                    pageElem = document.createElement('h1');
-                    pageElem.textContent = 'Details';
+                    pageElem = document.createElement('details-page');
                     const [, paramId] = route.split('-');
                     pageElem.setAttribute('data-id', paramId);
                     break;
