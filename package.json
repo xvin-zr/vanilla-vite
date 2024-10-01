@@ -1,0 +1,31 @@
+{
+  "name": "coffeemasters-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "overrides": [
+      {
+        "files": [
+          "*.js",
+          "*.ts"
+        ],
+        "options": {
+          "tabWidth": 4
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
+}
